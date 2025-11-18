@@ -1,19 +1,16 @@
-# Bluetooth (PIC) — Circuit Schematic
+# Wireless Wonders Power Your Pic Projects With Bluetooth — Circuit Notes
 
-- Course: Wireless Wonders: Power Your PIC Projects with Bluetooth
-- Author: Ashraf S A AlMadhoun
-- Link: https://www.udemy.com/course/bluetooth-module-interfacing-with-pic-microcontroller/?couponCode=JULYMAXDICOUNT
+| Signal | Suggested Pin | Notes |
+| --- | --- | --- |
+| Sensor Input | A0 / GPIO | Adjust according to the PIC Microcontroller board you own. |
+| Actuator Output | D9 / PWM Pin | Use a transistor/driver for high-current loads. |
+| Status LED | D13 or onboard LED | Mirrors the runtime state for quick debugging. |
 
-## Connections
+## Wiring Checklist
 
-- HC-05/06 module TX/RX to PIC UART; 3.3V/5V as per module; pairing with phone.
+1. Power rails first (5V / 3.3V and GND).
+2. Route sensor outputs to the analog/digital pin noted above.
+3. Add current-limiting resistors where appropriate.
+4. Double-check common grounds between modules and the development board.
 
-## Diagram (ASCII)
-
-```
-Phone -> Bluetooth -> PIC UART
-```
-
-## Purchase With Discount
-
-Get a discounted price and build wireless interfaces — use the link above.
+Refer to the course lecture for the exact schematic; reuse these notes as a quick reference.
